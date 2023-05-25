@@ -162,8 +162,14 @@ PAUP blocks that perform a heuristic search for the optimal tree are embedded in
 
 
 -------------
+# Additional program
 
 proteindist.pl 
+	- purpose: generate nexus distance matrix for protein alignments
+	- used for comparisons with the compression distances
+	- can calculate distances for many alternative amino acid alphabets
+	- can be used to generate phylip files with the alternative alphabets 
+	
 ```
 Usage:
   $ proteindist.pl <prefix> <alphabet> <mode> <distance>
