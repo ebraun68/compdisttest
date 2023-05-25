@@ -25,7 +25,7 @@ Programs to test the behavior of compression distances in phylogenomic analyses 
 
 2. Input --	requires this information:
 	1. a text file with paths to a set of protein fasta files for analysis
-		- single line protein fasta files
+		- each file should be a single line protein fasta files
 	2. a list of taxa to be included in analyses
 
 ```
