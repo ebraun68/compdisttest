@@ -1,6 +1,7 @@
 # compdisttest
 Programs to test the behavior of compression distances in phylogenomic analyses of proteins
 
+```
 ################################################################################
 #
 # Programs for compression distance calculations
@@ -12,6 +13,7 @@ Programs to test the behavior of compression distances in phylogenomic analyses 
 #	  can lead to errors; check input arguments carefully when run failures occur
 #
 ################################################################################
+```
 
 Workflow --	the programs are run sequentially with the output from one programs used as
 			input for the next program:
@@ -26,15 +28,16 @@ Input --	requires this information:
 		- single line protein fasta files
 	2. a list of taxa to be included in analyses
 
+```
 ################################################################################
 # Detailed workflow for each program
 ################################################################################
-
+```
 **********
 1. shuffle_locuslist.pl
 	- purpose: to shuffle, subsample, and jackknife a list of fasta files
 	- the fasta file list should be named <prefix>.sequences.txt
-	
+```	
 Usage:
   $ ./shuffle_locuslist.pl <locuslist> <outlist> <samplesize> <randseed>
   locuslist  = text file listing translated loci to analyze
@@ -46,7 +49,8 @@ Usage:
              of file then n = total number of sequences)
   randseed   = random integer to seed the random number generator
         use 0 for implicit srand() call
-
+```
+	
 The format of the locus list is simple - a text file listing fasta files for analysis. The
 full path to each fasta file is listed on each line, like this example:
 
