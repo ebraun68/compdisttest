@@ -77,6 +77,7 @@ end with ".sequences.txt"
 	- the compressor is set by a variable ($compexec) near the beginning of the
 	  pairwise_compression_dist.pl program
 
+```
 Usage:
   $ ./generate_distance_matrices.pl <taxalist> <prefix> <outfile>
   taxalist = text file listing taxa to analyze
@@ -87,7 +88,8 @@ Expected format for list of files:
 Format of the output files:
   <outfile>.nex      = nexus distance matrices
   <outfile>.dist.txt = list of evolutionary distances
-
+```
+	  
 The nexus outfile has embedded PAUP blocks that generate neighbor joining trees from
 each distance matrix when the file is executed in PAUP.
 
@@ -111,6 +113,7 @@ numerical value - element 1 if the line is split into an array - corresponds to 
 
 The following is an example of a ".dist.txt" outfile for a four-taxon analysis:
 
+```
 4
 Monodelphis_domestica
 Canis_familiaris
@@ -122,13 +125,15 @@ han_comp_dist		0	0.396327922954512	0.421498045872989	0.40630872911347	0.39632792
 HP_comp_dist		0	0.531125985722307	0.553484836682509	0.532334374037801	0.531125985722307	0	0.425349559710654	0.33869615060523	0.553484836682509	0.425349559710654	0	0.406302891660676	0.532334374037801	0.33869615060523	0.406302891660676	0
 size_comp_dist		0	0.541964872449069	0.573561299086416	0.542881158546323	0.541964872449069	0	0.447652590105229	0.347168265158443	0.573561299086416	0.447652590105229	0	0.421254181278427	0.542881158546323	0.347168265158443	0.421254181278427	0
 GC_comp_dist		0	0.597126465763397	0.624693355443062	0.599907492568409	0.597126465763397	0	0.503542380154037	0.410043650499122	0.624693355443062	0.503542380154037	0	0.484965459693378	0.599907492568409	0.410043650499122	0.484965459693378	0
-
+```
+	  
 The ".dist.txt" file is input for the distance correction program.
 
 **********
 3. generate_corrected_distances.pl
 	- purpose: apply a gamma-correction to distances in a ".dist.txt" file
 
+```
 Usage:
   $ generate_corrected_distances.pl <distlist> <alpha> <outfile> <prefix>
   distlist = text file listing evolutionary distances
@@ -137,6 +142,7 @@ Usage:
     -- use 0 for Poisson-type correction
   outfile  = nexus format distance matrix
   prefix   = prefix for the treefiles
+```
 
 <distlist> is the ".dist.txt" file written by generate_distance_matrices.pl. The alpha
 parameter for a gamma correction is passed on the command line. This program generates a
@@ -158,6 +164,7 @@ PAUP blocks that perform a heuristic search for the optimal tree are embedded in
 -------------
 
 proteindist.pl 
+```
 Usage:
   $ proteindist.pl <prefix> <alphabet> <mode> <distance>
   prefix   = prefix for input and output files
@@ -185,3 +192,5 @@ Usage:
       Poisson -- Poisson correction
       gamma   -- Gamma correction, must provide alpha parameter
          use gamma=alpha where alpha is >0
+```
+
