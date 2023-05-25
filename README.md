@@ -15,7 +15,7 @@ Programs to test the behavior of compression distances in phylogenomic analyses 
 ################################################################################
 ```
 
-Workflow --	the programs are run sequentially with the output from one programs used as
+1. Workflow --	the programs are run sequentially with the output from one programs used as
 			input for the next program:
 	1. shuffle_locuslist.pl (optional)
 	2. generate_distance_matrices.pl (requires pairwise_compression_dist.pl)
@@ -23,7 +23,7 @@ Workflow --	the programs are run sequentially with the output from one programs 
 	3. generate_corrected_distances.pl
 	4. Estimate trees in PAUP
 
-Input --	requires this information:
+2. Input --	requires this information:
 	1. a text file with paths to a set of protein fasta files for analysis
 		- single line protein fasta files
 	2. a list of taxa to be included in analyses
