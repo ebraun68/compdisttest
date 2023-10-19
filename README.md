@@ -1,5 +1,11 @@
 # compdisttest
-Programs to test the behavior of compression distances in phylogenomic analyses of proteins
+Programs to test the behavior of compression distances in phylogenomic analyses of proteins.
+This work has been described in:
+
+Braun, Edward L. 2023. Phylogenomics using compression distances: Incorporating rate heterogeneity 
+and amino acid properties. In Proceedings of the 14th ACM International Conference on Bioinformatics, 
+Computational Biology, and Health Informatics (BCB '23). Association for Computing Machinery, New 
+York, NY, USA, Article 46, 1–6. https://doi.org/10.1145/3584371.3612996
 
 ```
 ################################################################################
