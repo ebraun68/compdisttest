@@ -7,6 +7,10 @@ and amino acid properties. In Proceedings of the 14th ACM International Conferen
 Computational Biology, and Health Informatics (BCB '23). Association for Computing Machinery, New 
 York, NY, USA, Article 46, 1–6. https://doi.org/10.1145/3584371.3612996
 
+Data used to test compression distances in the Braun (2023) ACM-BCB proceedings are available from:
+
+Braun, E. L. (2023). compdist (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7971922
+
 ```
 ################################################################################
 #
